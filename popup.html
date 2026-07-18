@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Markdown to Word</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Markdown → Word</h1>
+
+    <div id="dropzone" class="dropzone">
+      <p>Drop a .md file here<br>or click to choose</p>
+      <input type="file" id="fileInput" accept=".md,.markdown,text/markdown" hidden>
+    </div>
+
+    <div id="fileInfo" class="file-info hidden"></div>
+
+    <button id="convertBtn" disabled>Convert to .docx</button>
+
+    <div id="status" class="status"></div>
+  </div>
+  <script src="dist/popup.bundle.js"></script>
+</body>
+</html>

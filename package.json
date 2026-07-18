@@ -1,0 +1,18 @@
+{
+  "name": "md-to-word",
+  "version": "1.0.0",
+  "description": "Chrome extension: convert Markdown files to real .docx Word documents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/popup.js --bundle --outfile=dist/popup.bundle.js --platform=browser --format=iife --target=chrome100",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "docx": "^9.1.1",
+    "marked": "^13.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.1"
+  }
+}
